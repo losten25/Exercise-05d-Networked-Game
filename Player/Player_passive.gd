@@ -9,3 +9,5 @@ remote func _set_rotation(rot):
 remote func _die():
 	queue_free()
 	
+
+

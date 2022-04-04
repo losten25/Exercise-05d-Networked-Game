@@ -9,7 +9,7 @@ func _on_Host_pressed():
 	net.create_server(13458, 4095)				# This Godot instance will host the game (i.e., be the server). It will connect on TCP/UDP port 13458, and it can host 4095 possible connections
 	get_tree().set_network_peer(net)
 	Global.which_player = 1						# The hosting instance will control player 1 
-	$Lobby.text = "Hosting"
+	$Label.text = "Hosting"
 	$Host.hide()
 	$Join.hide()
 
